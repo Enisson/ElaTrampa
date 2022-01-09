@@ -1,0 +1,57 @@
+﻿@section Stylesheets{
+    <link rel="stylesheet" href="../css/cadastro.css" />
+}
+
+@{
+    ViewData["Title"] = "Cadastro";
+}
+
+<body>
+    <main class="conteudo">
+        <h2 class="h2Main">Cadastre-se e veja as vagas que estão<br>esperando por voce!</h2>
+        <section class="sectionCadastro">
+            <form class="campo">
+                <div class="box">
+                    <label class="perguntas" for="nome">Qual seu nome?</label>
+                    <div>
+                        <input class="input" type="text" name="nome" id="nome" required>
+                    </div>
+                </div>
+                <div class="box">
+                    <label class="perguntas" for="nome">Qual o seu CPF?</label>
+                    <div>
+                        <input class="input" type="text" name="nome" id="nome" required>
+                    </div>
+                </div>
+                <div class="box">
+                    <label class="perguntas" for="email">Qual o seu principal e-mail?</label>
+                    <div>
+                        <input class="input" type="email" id="email" required>
+                    </div>
+                </div>
+                <div class="box">
+                    <label class="perguntas" for="cpf">Telefone para contato?</label>
+                    <div>
+                        <input class="input" type="tel" id="telefone" required>
+                    </div>
+                </div>
+                <div class="box">
+                    <label class="perguntas" for="vagas">Selecione a vaga que voce quer!</label>
+                    <div>
+                        <select class="escolherVaga" name="" id="">
+                            <option value="Jovem Aprendiz">Jovem Aprendiz</option>
+                            <option value="Maquiadora">Maquiadora</option>
+                            <option value="Estagio">Estagiário(a/e)</option>
+                            <option value="Jovem Aprendiz">Jovem Aprendiz</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="btn-contato">
+                    <button class="botaoCadastro" type="submit">Cadastre-se na vaga</button>
+                </div>
+                <h6 class="tituloConta">Já tem uma conta? Entre por aqui.</h6>
+            </form>
+        </section>
+    </main>
+
+</body>

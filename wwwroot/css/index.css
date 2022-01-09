@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&family=Roboto:wght@100;300;400;700&display=swap%27");
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+html {
+    height: 100%;
+    font-size: 62.5%;
+}
+body{
+    height: 100%;
+    font-size: 1.6rem;
+    color: #989898;
+    display: flex;
+    flex-direction: column;
+}
+.nav-contato{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 10rem;
+    box-shadow: 0rem 0rem 0.4rem rgba(247, 168, 184, 0.877);
+}
+
+.nav-contato h1{
+    color:#55CDFC;
+    font-size: 3rem;
+}
+
+.nav-contato span{
+    color:#F7A8B8;
+}
+
+.nav-contato ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-contato li{
+    padding-right: 1.5rem;
+    list-style: none;
+    font-weight: bold;
+}
+.nav-contato li a{
+    color: #989898;
+    transition: all 0.3s ease;
+}
+
+.nav-contato li a:hover{
+    font-weight: lighter;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+}
+.user p{
+    margin-right: 1rem;
+}
+.user img{
+    border: 0.1rem solid #989898;
+    border-radius:50%;
+    max-width:3.5rem;
+}
+
+.conteudo{
+    flex: 1 0 auto;
+}
+
+.imagemFundo{
+    background-image: url("https://cdn.discordapp.com/attachments/886767522152611910/928673807282106378/banner.jpeg");
+    height: 32vh;
+    background-size: cover;
+    background-position: center;
+}
+
+div.Banner{
+    padding-left: 50rem;
+    font-size: 2.0rem;
+    background: rgba(11, 11, 158, 0.2);
+    backdrop-filter: blur(0.2rem); 
+    color: white;
+    height: 32vh;
+}
+
+.tituloBanner{
+    padding-top: 3.0rem;
+}
+
+.pBanner{
+    padding-top: 12.0rem;
+    padding-bottom: 1.0rem;
+}
+
+.botaoBanner{
+    border: 2px solid #F7A8B8;
+    background-color: #F7A8B8;
+    color: white;
+    padding: 0.7rem 1.4rem;
+    border-radius: 0.6rem;
+    cursor: pointer; 
+    z-index: auto;
+}
+
+.botaoBanner:hover{
+    transform: scale(1.03);
+}
+
+.tituloVagas{
+    margin-top: 3.0rem;
+    text-align: center;
+    color: #55CDFC;
+    font-size: 3.0rem;
+}
+
+.box{
+    margin: 3.0rem 0rem 7.0rem 0rem;
+}
+
+.boxLine{
+    display: flex;
+    justify-content: center;
+
+}
+
+.Vagas{
+    text-align: center;
+    border: 3px solid #55CDFC;
+    padding: 3.5rem;
+    width: 12%;
+    margin: 2.0rem;
+}
+
+.vagaDisponivel{
+    color: #55CDFC;
+}
+
+.botaoVagas{
+    border: 2px solid #F7A8B8;
+    background-color: #F7A8B8;
+    color: white;
+    padding: 0.7rem 2.0rem;
+    border-radius: 0.6rem;
+    cursor: pointer; 
+}
+
+.botaoVagas:hover{
+    transform: scale(1.03);
+}
+
+.profissao{
+    background-color: #F7A8B8;
+    text-align: center;
+    padding: 3.0rem;
+}
+
+.tituloProfissao{
+    color: white;
+    font-size: 3.0rem;
+    padding: 0em 0.7rem 3.0rem 0.7rem;
+}
+
+.busca{
+    display: flex;
+    justify-content: center;
+}
+
+.buscaEncontrada{
+    color: #55CDFC;
+    background-color: white;
+    margin: 1.0rem;
+    padding: 1.0rem;
+}
+
+footer{
+    flex-shrink: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #55CDFC;
+}
+.h3Footer{
+    text-align: center;
+    color: white;
+    padding-top: 1.2rem;
+    font-size: 3rem;
+}
+
+.pFooter{
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size:1rem;
+    color: white;
+}

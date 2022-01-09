@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ElaTrampa</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="./css/index.css" />  
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    @RenderSection("Stylesheets", required:true)
+
+</head>
+<body>
+    <header>
+        <nav class="nav-contato">
+        <div class="logo">
+            <h1>Ela<span>Trampa!</span></h1>
+        </div>
+        <div class="nav">
+            <ul>
+                <li>
+                    <a asp-area="" asp-controller="Home" asp-action="Index">Início</a>
+                </li>
+                <li>
+                    <a asp-area="" asp-controller="Home" asp-action="QuemSomos">Quem Somos</a>
+                </li>
+                <li>
+                    <a asp-area="" asp-controller="Home" asp-action="Vagas">Vagas</a>
+                </li>
+                <li>
+                    <a asp-area="" asp-controller="Home" asp-action="Cadastro">Cadastro</a>
+                </li>
+                <li>
+                    <a asp-area="" asp-controller="Home" asp-action="Contato">Contato</a>
+                </li>
+            </ul>
+        </div>
+        <div class="user">
+            <p>Squad53</p>
+            <img src="img/user.jpeg" alt="Avatar">
+        </div>
+    </nav>
+    </header>
+
+    <div class="conteudo">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <h3 class="h3Footer">ElaTrampa!</h3>
+                <p class="pFooter">&copy; Copyright ElaTrampa! 2021 - Developed by <strong>Squad53</strong></p>
+            </div>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

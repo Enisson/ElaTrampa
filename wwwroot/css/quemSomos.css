@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&family=Roboto:wght@100;300;400;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {  
+    height: 100%;
+    font-size: 62.5%;
+}
+body{
+    font-family:'Poppins', sans-serif;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+    color: #989898;
+}
+.nav-contato{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 10rem;
+    box-shadow: 0rem 0rem 0.4rem rgba(247, 168, 184, 0.877);
+}
+
+.nav-contato h1{
+    color:#55CDFC;
+    font-size: 3rem;
+}
+
+.nav-contato span{
+    color:#F7A8B8;
+}
+
+.nav-contato ul{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.nav-contato li{
+    padding-right: 1.5rem;
+    list-style: none;
+    font-weight: bold;
+}
+.nav-contato li a{
+    color: #989898;
+    transition: all 0.3s ease;
+}
+
+.nav-contato li a:hover{
+    font-weight: lighter;
+}
+
+.user{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.user p{
+    margin-right: 1rem;
+}
+.user img{
+    border: 0.1rem solid #989898;
+    border-radius:50%;
+    max-width:3.5rem;
+}
+.conteudo{
+    flex: 1 0 auto;
+}
+
+section{
+    text-align: center;
+    margin: 0 25rem;
+}
+
+.h2Main{
+    color: #55CDFC;
+    font-size: 3rem;
+    margin: 2rem 0rem;
+}
+
+.imgFundo{
+    margin: 3rem;
+    border-radius: 1rem;
+    width: 48rem;
+    height: 26rem;
+}
+
+.imgSobreNos{
+    height: 10rem;
+    width: 10rem;
+    margin: 1rem;
+    border-radius: 5rem;
+}
+
+.box-line{
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+
+footer{
+    flex-shrink: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #55CDFC;
+}
+.h3Footer{
+    text-align: center;
+    color: white;
+    padding-top: 1.2rem;
+    font-size: 3rem;
+}
+
+.pFooter{
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size:1rem;
+    color: white;
+}
