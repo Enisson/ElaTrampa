@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 namespace ElaTrampa.Models
 {
 
-    public enum ExemploVagas
-    {
-        JovemAprendiz, Maquiadora, Costureira, Cabeleleira
-    }
+   
     public class Candidato
     {
         public int ID { get; set; }
@@ -21,8 +18,7 @@ namespace ElaTrampa.Models
 
         public string Telefone { get; set; }
 
-        public ExemploVagas? ExemploVagas { get; set; }
-
+       
 
         public ICollection<Vaga> Vagas { get; set; }
 

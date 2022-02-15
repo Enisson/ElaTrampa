@@ -6,52 +6,55 @@
     ViewData["Title"] = "Cadastro";
 }
 
-<body>
-    <main class="conteudo">
-        <h2 class="h2Main">Cadastre-se e veja as vagas que estão<br>esperando por voce!</h2>
-        <section class="sectionCadastro">
-            <form class="campo">
-                <div class="box">
-                    <label class="perguntas" for="nome">Qual seu nome?</label>
-                    <div>
-                        <input class="input" type="text" name="nome" id="nome" required>
-                    </div>
+<div class="conteudo">
+    <h2 class="h2Main">Cadastre-se e veja as vagas que estão<br>esperando por você!</h2>
+    <section class="sectionCadastro">
+        <form class="campo">
+            <div class="box">
+                <label class="perguntas" for="nome">Nome</label>
+                <div>
+                    <input class="input" type="text" name="nome" id="nome" placeholder="Squad53" disabled>
                 </div>
-                <div class="box">
-                    <label class="perguntas" for="nome">Qual o seu CPF?</label>
-                    <div>
-                        <input class="input" type="text" name="nome" id="nome" required>
-                    </div>
+            </div>
+            <div class="box">
+                <label class="perguntas" for="cpf">CPF</label>
+                <div>
+                    <input class="input" type="text" name="cpf" id="cpf" placeholder="12345678900" disabled>
                 </div>
-                <div class="box">
-                    <label class="perguntas" for="email">Qual o seu principal e-mail?</label>
-                    <div>
-                        <input class="input" type="email" id="email" required>
-                    </div>
+            </div>
+            <div class="box">
+                <label class="perguntas" for="email">E-mail principal</label>
+                <div>
+                    <input class="input" type="email" id="email" placeholder="squad53@gmail.com" disabled>
                 </div>
-                <div class="box">
-                    <label class="perguntas" for="cpf">Telefone para contato?</label>
-                    <div>
-                        <input class="input" type="tel" id="telefone" required>
-                    </div>
+            </div>
+            <div class="box">
+                <label class="perguntas" for="telefone">Telefone</label>
+                <div>
+                    <input class="input" type="tel" id="telefone" placeholder="(11) 9 9999-9999" disabled>
                 </div>
-                <div class="box">
-                    <label class="perguntas" for="vagas">Selecione a vaga que voce quer!</label>
-                    <div>
-                        <select class="escolherVaga" name="" id="">
-                            <option value="Jovem Aprendiz">Jovem Aprendiz</option>
-                            <option value="Maquiadora">Maquiadora</option>
-                            <option value="Estagio">Estagiário(a/e)</option>
-                            <option value="Jovem Aprendiz">Jovem Aprendiz</option>
-                        </select>
-                    </div>
+            </div>
+            <div class="box">
+                <label for="mensagem">Conte um pouco sobre você!</label>
+                <div>
+                    <textarea class="input" name="mensagem" id="mensagem" cols="30" rows="6" required maxlength="240"></textarea>
                 </div>
-                <div class="btn-contato">
-                    <button class="botaoCadastro" type="submit">Cadastre-se na vaga</button>
+            </div>
+            <div class="box">
+                <label class="perguntas" for="vagas">Selecione a vaga que voce quer!</label>
+                <div>
+                    <select class="escolherVaga" name="vagas" id="vagas" required>
+                        <option selected value="">Escolha sua vaga</option>
+                        <option value="Jovem Aprendiz">Jovem Aprendiz</option>
+                        <option value="Maquiadora">Maquiadora</option>
+                        <option value="Costureira">Costureira</option>
+                        <option value="Cabeleireira">Cabeleireira</option>
+                    </select>
                 </div>
-                <h6 class="tituloConta">Já tem uma conta? Entre por aqui.</h6>
-            </form>
-        </section>
-    </main>
-
-</body>
+            </div>
+            <div class="btn-cadastro">
+                <button class="botaoCadastro" type="submit">Cadastre-se na vaga</button>
+            </div>
+        </form>
+    </section>
+</div>

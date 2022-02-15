@@ -15,33 +15,36 @@
 <body>
     <header>
         <nav class="nav-contato">
-        <div class="logo">
-            <h1>Ela<span>Trampa!</span></h1>
-        </div>
-        <div class="nav">
-            <ul>
-                <li>
-                    <a asp-area="" asp-controller="Home" asp-action="Index">Início</a>
-                </li>
-                <li>
-                    <a asp-area="" asp-controller="Home" asp-action="QuemSomos">Quem Somos</a>
-                </li>
-                <li>
-                    <a asp-area="" asp-controller="Home" asp-action="Vagas">Vagas</a>
-                </li>
-                <li>
-                    <a asp-area="" asp-controller="Home" asp-action="Cadastro">Cadastro</a>
-                </li>
-                <li>
-                    <a asp-area="" asp-controller="Home" asp-action="Contato">Contato</a>
-                </li>
-            </ul>
-        </div>
-        <div class="user">
-            <p>Squad53</p>
-            <img src="img/user.jpeg" alt="Avatar">
-        </div>
-    </nav>
+            <div class="logo">
+                <h1>Ela<span>Trampa!</span></h1>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a asp-area="" asp-controller="Home" asp-action="Index">Início</a>
+                    </li>
+                    <li>
+                        <a asp-area="" asp-controller="Home" asp-action="QuemSomos">Quem Somos</a>
+                    </li>
+                    <li>
+                        <a asp-area="" asp-controller="Home" asp-action="Vagas">Vagas</a>
+                    </li>
+                    <li>
+                        <a asp-area="" asp-controller="Home" asp-action="Cadastro">Cadastro</a>
+                    </li>
+                    <li>
+                        <a asp-area="" asp-controller="Home" asp-action="Contato">Contato</a>
+                    </li>
+                    <li>
+                        <a asp-area="" asp-controller="Candidatos" asp-action="Index">Administração</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="user">
+                <p>Squad53</p>
+                
+            </div>
+        </nav>
     </header>
 
     <div class="conteudo">
@@ -49,15 +52,15 @@
             @RenderBody()
         </main>
     </div>
-
     <footer>
-        <div class="container">
-            <div class="footer">
-                <h3 class="h3Footer">ElaTrampa!</h3>
-                <p class="pFooter">&copy; Copyright ElaTrampa! 2021 - Developed by <strong>Squad53</strong></p>
-            </div>
+        <div class="footer1">
+            <h3>ElaTrampa!</h3>
+            <p>&copy; Copyright ElaTrampa! 2021 - Desenvolvido  pelo <strong>Squad53</strong></p>
         </div>
     </footer>
+
+
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

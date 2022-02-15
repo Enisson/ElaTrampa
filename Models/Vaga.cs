@@ -7,10 +7,10 @@ namespace ElaTrampa.Models
 {
     public class Vaga
     {
-        public int IDVaga { get; set; }
-        public int IDEmpresa { get; set; }
+        public int VagaID { get; set; }
+        public int EmpresaID { get; set; }
 
-        public int IDCandidato { get; set; }
+        public int CandidatoID { get; set; }
 
         public string TituloVaga { get; set; }
         public string DescriçãoVaga { get; set; }

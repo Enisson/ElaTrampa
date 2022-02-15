@@ -27,7 +27,7 @@ namespace ElaTrampa
             services.AddDbContext<EmpregoContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddDatabaseDeveloperPageExceptionFilter();
+            
 
             services.AddControllersWithViews();
         }

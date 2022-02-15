@@ -1,43 +1,44 @@
 ﻿@section Stylesheets{
     <link rel="stylesheet" href="../css/vagas.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  
 }
 
 @{
     ViewData["Title"] = "Vagas - Ela Trampa!";
 }
 
-<body>
-    <main class="conteudo">
-        <section>
+<div class="conteudo">
+    <section>
+        <div class="sectionVagas">
+            <h1 class="vagas">Encontre aqui sua vaga</h1>
             <div>
-                <h1 class="vagas">Encontre aqui sua vaga</h1>
-                <div>
-                    <div class="caixa">
-                        <h2 class="tituloEmprego">Jovem Aprendiz</h2>
-                        <h3 class="tituloEmpresa">Nome da empresa aqui</h3>
-                        <p class="sobreVaga">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab porro eos magnam soluta quos laudantium odit ipsa, dignissimos qui iusto doloremque culpa earum quaerat voluptatem animi laborum modi quis fugit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo enim officiis incidunt inventore! A, temporibus. Ea, animi laborum quae deleniti, quaerat dignissimos aliquid, rem assumenda quo sequi voluptatibus ipsam modi!</p>
-                        <button class="botaoEmpregos" type="submit">Quero me candidatar</button>
-                    </div>
-                    <div class="caixa">
-                        <h2 class="tituloEmprego">Maquiadora</h2>
-                        <h3 class="tituloEmpresa">Nome da empresa aqui</h3>
-                        <p class="sobreVaga">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab porro eos magnam soluta quos laudantium odit ipsa, dignissimos qui iusto doloremque culpa earum quaerat voluptatem animi laborum modi quis fugit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo enim officiis incidunt inventore! A, temporibus. Ea, animi laborum quae deleniti, quaerat dignissimos aliquid, rem assumenda quo sequi voluptatibus ipsam modi!</p>
-                        <button class="botaoEmpregos" type="submit">Quero me candidatar</button>
-                    </div>
-                    <div class="caixa">
-                        <h2 class="tituloEmprego">Estagiário(a/e)</h2>
-                        <h3 class="tituloEmpresa">Nome da empresa aqui</h3>
-                        <p class="sobreVaga">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab porro eos magnam soluta quos laudantium odit ipsa, dignissimos qui iusto doloremque culpa earum quaerat voluptatem animi laborum modi quis fugit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo enim officiis incidunt inventore! A, temporibus. Ea, animi laborum quae deleniti, quaerat dignissimos aliquid, rem assumenda quo sequi voluptatibus ipsam modi!</p>
-                        <button class="botaoEmpregos" type="submit">Quero me candidatar</button>
-                    </div>
-                    <div class="caixa">
-                        <h2 class="tituloEmprego">Jovem Aprendiz</h2>
-                        <h3 class="tituloEmpresa">Nome da empresa aqui</h3>
-                        <p class="sobreVaga">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab porro eos magnam soluta quos laudantium odit ipsa, dignissimos qui iusto doloremque culpa earum quaerat voluptatem animi laborum modi quis fugit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo enim officiis incidunt inventore! A, temporibus. Ea, animi laborum quae deleniti, quaerat dignissimos aliquid, rem assumenda quo sequi voluptatibus ipsam modi!</p>
-                        <button class="botaoEmpregos" type="submit">Quero me candidatar</button>
-                    </div>
+                <div class="caixa">
+                    <h2 class="tituloEmprego">Jovem Aprendiz</h2>
+                    <h3 class="tituloEmpresa">Nome da empresa aqui</h3>
+                    <p class="sobreVaga">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab porro eos magnam soluta quos laudantium odit ipsa, dignissimos qui iusto doloremque culpa earum quaerat voluptatem animi laborum modi quis fugit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo enim officiis incidunt inventore! A, temporibus. Ea, animi laborum quae deleniti, quaerat dignissimos aliquid, rem assumenda quo sequi voluptatibus ipsam modi!</p>
+                    @Html.ActionLink("Quero me candidatar","Cadastro","Home",null,new { @class = "botaoEmpregos" })
+                    
+                </div>
+                <div class="caixa">
+                    <h2 class="tituloEmprego">Maquiadora</h2>
+                    <h3 class="tituloEmpresa">Nome da empresa aqui</h3>
+                    <p class="sobreVaga">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab porro eos magnam soluta quos laudantium odit ipsa, dignissimos qui iusto doloremque culpa earum quaerat voluptatem animi laborum modi quis fugit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo enim officiis incidunt inventore! A, temporibus. Ea, animi laborum quae deleniti, quaerat dignissimos aliquid, rem assumenda quo sequi voluptatibus ipsam modi!</p>
+                    @Html.ActionLink("Quero me candidatar", "Cadastro", "Home", null, new { @class = "botaoEmpregos" })
+                </div>
+                <div class="caixa">
+                    <h2 class="tituloEmprego">Costureira</h2>
+                    <h3 class="tituloEmpresa">Nome da empresa aqui</h3>
+                    <p class="sobreVaga">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab porro eos magnam soluta quos laudantium odit ipsa, dignissimos qui iusto doloremque culpa earum quaerat voluptatem animi laborum modi quis fugit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo enim officiis incidunt inventore! A, temporibus. Ea, animi laborum quae deleniti, quaerat dignissimos aliquid, rem assumenda quo sequi voluptatibus ipsam modi!</p>
+                    @Html.ActionLink("Quero me candidatar", "Cadastro", "Home", null, new { @class = "botaoEmpregos" })
+                </div>
+                <div class="caixa">
+                    <h2 class="tituloEmprego">Cabeleireira</h2>
+                    <h3 class="tituloEmpresa">Nome da empresa aqui</h3>
+                    <p class="sobreVaga">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab porro eos magnam soluta quos laudantium odit ipsa, dignissimos qui iusto doloremque culpa earum quaerat voluptatem animi laborum modi quis fugit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo enim officiis incidunt inventore! A, temporibus. Ea, animi laborum quae deleniti, quaerat dignissimos aliquid, rem assumenda quo sequi voluptatibus ipsam modi!</p>
+                    @Html.ActionLink("Quero me candidatar", "Cadastro", "Home", null, new { @class = "botaoEmpregos" })
                 </div>
             </div>
-        </section>
-    </main>
-</body>
+        </div>
+    </section>
+</div>

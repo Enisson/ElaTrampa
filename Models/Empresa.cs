@@ -9,7 +9,7 @@ namespace ElaTrampa.Models
     public class Empresa
     {
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        public int IDEmpresa { get; set; }
+        public int EmpresaID { get; set; }
         public string NomeEmpresa { get; set; }
 
         public string NomeContatoEmpresa { get; set; }

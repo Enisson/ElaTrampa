@@ -21,9 +21,9 @@ namespace ElaTrampa.Data
 
             var candidatos = new Candidato[]
             {
-                new Candidato{Nome="Jaylen Hurts",CPF="78956412321",Email="jhurts@nfl.com",ExemploVagas=ExemploVagas.JovemAprendiz},
-                new Candidato{Nome="Dak Prescott",CPF="78956412421",Email="dakota@nfl.com",ExemploVagas=ExemploVagas.Maquiadora},
-                new Candidato{Nome="Tom Brady",CPF="78956412371",Email="tombrasa@nfl.com",ExemploVagas=ExemploVagas.Cabeleleira}
+                new Candidato{Nome="Jaylen Hurts",CPF="78956412321",Email="jhurts@nfl.com"},
+                new Candidato{Nome="Dak Prescott",CPF="78956412421",Email="dakota@nfl.com"},
+                new Candidato{Nome="Tom Brady",CPF="78956412371",Email="tombrasa@nfl.com"}
             };
             foreach (Candidato c in candidatos)
             {
@@ -33,9 +33,9 @@ namespace ElaTrampa.Data
 
             var empresas = new Empresa[]
             {
-                new Empresa{IDEmpresa=1024,NomeEmpresa="Eagles",NomeContatoEmpresa="Nick Syriani",EmailEmpresa="eagles@nfl.com",TelefoneEmpresa="+155577788"},
-                new Empresa{IDEmpresa=1025,NomeEmpresa="Dallas",NomeContatoEmpresa="Mike McCarthy",EmailEmpresa="cowboys@nfl.com",TelefoneEmpresa="+155577799"},
-                new Empresa{IDEmpresa=1026,NomeEmpresa="Bucs",NomeContatoEmpresa="Bruce Arians",EmailEmpresa="bucs@nfl.com",TelefoneEmpresa="+155544488"}
+                new Empresa{EmpresaID=1024,NomeEmpresa="Eagles",NomeContatoEmpresa="Nick Syriani",EmailEmpresa="eagles@nfl.com",TelefoneEmpresa="+155577788"},
+                new Empresa{EmpresaID=1025,NomeEmpresa="Dallas",NomeContatoEmpresa="Mike McCarthy",EmailEmpresa="cowboys@nfl.com",TelefoneEmpresa="+155577799"},
+                new Empresa{EmpresaID=1026,NomeEmpresa="Bucs",NomeContatoEmpresa="Bruce Arians",EmailEmpresa="bucs@nfl.com",TelefoneEmpresa="+155544488"}
             };
             foreach (Empresa e in empresas)
             {
@@ -45,9 +45,9 @@ namespace ElaTrampa.Data
 
             var vagas = new Vaga[]
             {
-                new Vaga{IDCandidato=1,IDEmpresa=1024,TituloVaga="Jovem Aprendiz",DescriçãoVaga="Lorem Ipsum, Lorem Ipsum, Lorem Ipsum"},
-                new Vaga{IDCandidato=2,IDEmpresa=1025,TituloVaga="Cabeleleira",DescriçãoVaga="Lorem Ipsum, Lorem Ipsum, Lorem Ipsum"},
-                new Vaga{IDCandidato=3,IDEmpresa=1026,TituloVaga="Costureira",DescriçãoVaga="Lorem Ipsum, Lorem Ipsum, Lorem Ipsum"}
+                new Vaga{CandidatoID=1,EmpresaID=1024,TituloVaga="Jovem Aprendiz",DescriçãoVaga="Lorem Ipsum, Lorem Ipsum, Lorem Ipsum"},
+                new Vaga{CandidatoID=2,EmpresaID=1025,TituloVaga="Cabeleleira",DescriçãoVaga="Lorem Ipsum, Lorem Ipsum, Lorem Ipsum"},
+                new Vaga{CandidatoID=3,EmpresaID=1026,TituloVaga="Costureira",DescriçãoVaga="Lorem Ipsum, Lorem Ipsum, Lorem Ipsum"}
             };
             foreach (Vaga v in vagas)
             {
