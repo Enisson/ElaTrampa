@@ -1,0 +1,62 @@
+﻿@model ElaTrampa.Models.Candidato
+
+
+
+@{
+    ViewData["Title"] = "Cadastro";
+}
+
+<h1>Criar</h1>
+
+<h4>Candidato</h4>
+<hr />
+
+
+<div class="conteudo">
+    <h2 class="h2Main">Cadastre-se e veja as vagas que estão<br>esperando por você!</h2>
+    <section class="sectionCadastro">
+        <form class="campo" asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="box">
+                <label asp-for="Nome" class="perguntas"></label>
+                <div>
+                    <input asp-for="Nome" class="input" />
+                    <span asp-validation-for="Nome" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="box">
+                <label asp-for="CPF" class="perguntas"></label>
+                <div>
+                    <input asp-for="CPF" class="input" />
+                    <span asp-validation-for="CPF" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="box">
+                <label asp-for="Email" class="perguntas"></label>
+                <div>
+                    <input asp-for="Email" class="input" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="box">
+                <label asp-for="Telefone" class="perguntas"></label>
+                <div>
+                    <input asp-for="Telefone" class="input" />
+                    <span asp-validation-for="Telefone" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="btn-cadastro">
+                <input type="submit" value="Create" class="botaoCadastro" />
+            </div>
+        </form>
+    </section>
+</div>
+
+
+<div>
+    <a asp-action="Index">Voltar a Lista</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
