@@ -13,7 +13,7 @@
 <div class="conteudo">
     <h2 class="h2Main">Cadastre-se e veja as vagas que estão<br>esperando por você!</h2>
     <section class="sectionCadastro">
-        <form asp-action="Create" class="grupo">
+        <form asp-controller="Candidatos" asp-action="Create" class="grupo">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="campo">
                 <label class="perguntas" asp-for="Nome">Nome</label>
@@ -39,7 +39,7 @@
             <div class="campo">
                 <label class="perguntas" asp-for="Telefone">Telefone</label>
                 <div>
-                    <input class="input" asp-for="Telefone" placeholder="(11) 9 9999-9999" disabled>
+                    <input class="input" asp-for="Telefone" placeholder="(11) 9 9999-9999">
                 </div>
             </div>
             <div class="campo">
