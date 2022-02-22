@@ -13,7 +13,7 @@
 <div class="conteudo">
     <h2 class="h2Main">Cadastre-se e veja as vagas que estão<br>esperando por você!</h2>
     <section class="sectionCadastro">
-        <form asp-action="Create" class="campo">
+        <form asp-action="Create" class="grupo">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="campo">
                 <label class="perguntas" asp-for="Nome">Nome</label>
@@ -60,8 +60,11 @@
                     </select>
                 </div>
             </div>
-            <div class="btn-cadastro">
-                <button class="botaoCadastro" type="submit">Cadastre-se na vaga</button>
+            <p></p>
+            <div class="campo">
+                <div class="">
+                    <button class="botaoCadastro" type="submit">Cadastre-se na vaga</button>
+                </div>
             </div>
         </form>
     </section>
