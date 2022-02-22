@@ -1,6 +1,11 @@
 ﻿@model ElaTrampa.Models.Candidato
 
+@section Stylesheets{
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/index.css" />
+    <link rel="stylesheet" href="~/css/contato.css" />
 
+}
 
 @{
     ViewData["Title"] = "Cadastro";
@@ -46,7 +51,7 @@
                 </div>
             </div>
             <div class="btn-cadastro">
-                <input type="submit" value="Create" class="botaoCadastro" />
+                <input type="submit" value="Criar" class="botaoCadastro" />
             </div>
         </form>
     </section>

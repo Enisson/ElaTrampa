@@ -12,7 +12,7 @@
 
 <div class="conteudo">
     <h2 class="h2Main">Entre em contato conosco</h2>
-    <p class="pMain"> Preencha suas informações abaixo que em breve entraremos em contato </p>
+    <p class="pMain text-center"> Preencha suas informações abaixo que em breve entraremos em contato </p>
 
     <section class="sectionContato">
         <form class="grupo" asp-action="Create">
@@ -38,15 +38,16 @@
                     <span asp-validation-for="Telefone" class="text-danger"></span>
                 </div>
             </div>
+            <div class="campo">
+                <label for="mensagem">Deixa aqui sua mensagem!</label>
+                <div>
+                    <textarea class="input" name="mensagem" id="mensagem" cols="30" rows="6"></textarea>
+                </div>
+            </div>
             <div class="btn-contato">
                 <button class="botao" type="submit">Enviar</button>
             </div>
         </form>
-        <div class="campo">
-            <label for="mensagem">Deixa aqui sua mensagem!</label>
-            <div>
-                <textarea class="input" name="mensagem" id="mensagem" cols="30" rows="6"></textarea>
-            </div>
-        </div>
+        
     </section>
 </div>

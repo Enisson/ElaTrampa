@@ -2,6 +2,9 @@
 
 @section Stylesheets{
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/index.css" />
+    <link rel="stylesheet" href="~/css/cadastro.css" />
+    
     
 }
 
@@ -9,17 +12,16 @@
     ViewData["Title"] = "Cadastrar Candidatos";
 }
 
-<h1>Criar</h1>
+<h1>Criar Candidato</h1>
 
-<h4>Candidato</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create">
+        <form asp-action="Create" class="grupo">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
+            <div class="campo">
                 <label asp-for="Nome" class="control-label"></label>
-                <input asp-for="Nome" class="form-control" />
+                <input asp-for="Nome" class="input" />
                 <span asp-validation-for="Nome" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -38,7 +40,7 @@
                 <span asp-validation-for="Telefone" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="botaoCadastro" />
+                <input type="submit" value="Criar" class="botaoVagas" />
             </div>
         </form>
     </div>
