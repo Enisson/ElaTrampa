@@ -1,5 +1,7 @@
-# ElaTrampa
-Projeto Recode Pro 
+<img src="/wwwroot/img/elatrampa.png">
+
+<p align="center">🚧 ElaTrampa 2.0 🚀 em construção... 🚧</p>
+<div><img src="https://img.shields.io/badge/elatrampa-recodepro-blue"> - Portal de vagas para a população trans </div>
 
 # Entregas do Projeto
 
