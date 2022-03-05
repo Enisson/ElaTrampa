@@ -5,6 +5,16 @@
 
 # Entregas do Projeto
 
+## 🛠 Tecnologias
+
+As seguintes ferramentas foram usadas na construção do projeto:
+
+- [C#(https://docs.microsoft.com/pt-br/dotnet/csharp/)
+- [.NETFramewwork](https://dotnet.microsoft.com/en-us/)
+- [SQLserver 2019](https://www.microsoft.com/en-us/sql-server/sql-server-2019
+- [Bootstrap](https://getbootstrap.com/)
+
+
 # Diagrama de Classe
 
 <img src="/wwwroot/img/Class Diagram0.png">
