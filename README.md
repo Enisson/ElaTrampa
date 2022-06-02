@@ -22,3 +22,5 @@ As seguintes ferramentas foram usadas na construção do projeto:
 # Diagrama Entidade relacionamento
 
 <img src="/wwwroot/img/Class Diagram0.png">
+
+Deploy: https://elatrampa.netlify.app
